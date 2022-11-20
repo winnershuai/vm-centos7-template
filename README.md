@@ -1,3 +1,3 @@
 # vm-centos7-template
-centos7虚拟机模板机制作脚本
-curl -sSfl https://github.com/winnershuai/vm-centos7-template/tree/main/install-docker| bash
+centos7虚拟机模板机制作脚本 curl -sSfl https://raw.githubusercontent.com/winnershuai/vm-centos7-template/main/template.sh|bash
+安装docker：curl -sSfl https://raw.githubusercontent.com/winnershuai/vm-centos7-template/main/install-docker |bash
