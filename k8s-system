@@ -1,5 +1,5 @@
 #为安装k8s优化系统
-关闭swap
+#关闭swap
 swapoff -a
 sed -ri 's/.*swap.*/#&/' /etc/fstab 
 
