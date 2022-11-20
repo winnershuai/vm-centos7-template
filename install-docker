@@ -1,0 +1,10 @@
+yum install -y docker-ce-3:19.03.9-3.el7.x86_64 docker-ce-cli containerd.io
+systemctl start docker
+systemctl enable docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+"registry-mirrors": ["https://6fnywwd8.mirror.aliyuncs.com"]
+}
+EOF
+systemctl daemon-reload
+systemctl restart docker
