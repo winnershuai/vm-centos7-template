@@ -24,7 +24,7 @@ echo 'UseDNS no'>>/etc/ssh/sshd_config
 echo 'PermitRootLogin yes'>>/etc/ssh/sshd_config
 systemctl status sshd
 /etc/init.d/network restart
-#设置阿里源
+#设置阿里源（不同系统的repo文件名不一样注意修改)
 curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
 yum clean all
 yum makecache 
