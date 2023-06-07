@@ -11,8 +11,8 @@ systemctl disable firewalld
 cat > /etc/sysconfig/network-scripts/ifcfg-ens192 << EOF 
 TYPE=Ethernet
 BOOTPROTO=static
-NAME=enp0s3
-DEVICE=enp0s3
+NAME=ens192
+DEVICE=ens192
 ONBOOT=yes
 IPADDR=192.168.1.65
 GATEWAY=192.168.1.1
