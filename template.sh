@@ -33,7 +33,7 @@ yum makecache
 yum install ntp -y
 ntpdate ntp.aliyun.com
 hwclock -w
-yum install epel-release
+yum install -y epel-release
 yum install -y bash-completion net-tools
 yum install -y yum-utils device-mapper-persistent-data lvm2
 yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
